@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import upload_csv, pause_task, resume_task, cancel_task
+from .views import upload_csv, download_csv, pause_task, resume_task, cancel_task
 
 
 urlpatterns = [
@@ -7,4 +7,5 @@ urlpatterns = [
     path('task/<int:task_id>/resume/', resume_task, name="resume_task"),
     path('task/<int:task_id>/cancel/', cancel_task, name="cancel_task"),
     path('upload/', upload_csv, name="upload_csv"),
+    path('download/', download_csv, name="download_csv"),
 ]

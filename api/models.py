@@ -34,7 +34,7 @@ class User(models.Model):
     sex = models.CharField(max_length=1)
     birthdate = models.DateField()
     is_active = models.BooleanField()
-    date_joined = DateTimeWithoutTZField()
+    date_joined = DateTimeWithoutTZField(db_index=True)
 
     def __str__(self):
         return self.name

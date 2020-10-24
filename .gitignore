@@ -292,4 +292,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Others
+export.csv
+
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,python,django,database,redis
